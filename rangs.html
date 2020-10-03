@@ -50,38 +50,80 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="#">Главная <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="https://nade9.github.io/conred/addons.html">Аддоны</a>
-                <a class="nav-link" href="https://nade9.github.io/conred/info.html">Информация</a>
-                <a class="nav-link" href="https://nade9.github.io/conred/rangs.html">Ранги</a>
-                <a class="nav-link" href="https://nade9.github.io/conred/faq.html">ЧаВо</a>
-                <a class="nav-link" href="https://nade9.github.io/conred/about.html">О сервере</a>
-                <a class="nav-link" href="https://nade9.github.io/conred/donate.html">Пожертвование</a>
+                <a class="nav-link" href="index.html">Главная</span></a>
+                <a class="nav-link" href="addons.html">Аддоны</a>
+                <a class="nav-link" href="info.html">Информация</a>
+                <a class="nav-link active" href="#">Ранги <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="faq.html">ЧаВо</a>
+                <a class="nav-link" href="about.html">О сервере</a>
+                <a class="nav-link" href="donate.html">Пожертвование</a>
             </div>
         </div>
     </nav>
-    <div class="container-fluid bg-light text-dark rounded-bottom p-2">
-        <h1 class="text-center">Добро пожаловать!</h1>
-        <p>Помните: в <span class="font-weight-bold">MOTD</span> можно найти много полезного!</p>
-
-        <h2>Привет, Друг!</h2>
-        <p>
-            Мы рады всем новичкам на Нашем сервере! Огромная просьба: прочитайте правила, это не займёт у Вас больше 5
-            минут! Больше информации Вы найдёте тут
-        </p>
-        <h2>Discord</h2>
-        <p>
-            Вы ещё не состоите в Нашем Дискорд сервере? Вы пропускаете много интересного! Вступайте прямо сейчас!
-            Там Вы можете общаться с другими игроками Нашего сервера, даже не заходя в сам Garry's mod!
-            <a href="https://discord.gg/eGmTNFA">Ссылка</a>
-        </p>
-
-        <h2>Trello</h2>
-        <p>
-            На Нашем Trello Вы можете узнать что планируется в будущем на сервере, а так же добавить свои комментарии о
-            тех, или иных обновлениях!
-            <a href="https://trello.com/b/U6pKKDEj/conred-gmod-server">Ссылка</a>
-        </p>
+    <div class="container-fluid bg-light text-dark rounded-bottom pb-5">
+        <h1 class="text-center">Ранги</h1>
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-new-list" data-toggle="list"
+                        href="#list-new" role="tab" aria-controls="new">Новичок</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                        href="#list-checked" role="tab" aria-controls="checked">Проверенный</a>
+                    <a class="list-group-item list-group-item-action" id="list-mastered-list" data-toggle="list"
+                        href="#list-mastered" role="tab" aria-controls="messages">Освоившийся</a>
+                    <a class="list-group-item list-group-item-action" id="list-lover-list" data-toggle="list"
+                        href="#list-lover" role="tab" aria-controls="settings">Любитель</a>
+                    <a class="list-group-item list-group-item-action" id="list-expert-list" data-toggle="list"
+                        href="#list-expert" role="tab" aria-controls="new">Знаток</a>
+                    <a class="list-group-item list-group-item-action" id="list-spec-list" data-toggle="list"
+                        href="#list-spec" role="tab" aria-controls="checked">Специалист</a>
+                    <a class="list-group-item list-group-item-action" id="list-veteran-list" data-toggle="list"
+                        href="#list-veteran" role="tab" aria-controls="messages">Ветеран</a>
+                    <a class="list-group-item list-group-item-action" id="list-respected-list" data-toggle="list"
+                        href="#list-respected" role="tab" aria-controls="settings">Уважаемый</a>
+                    <a class="list-group-item list-group-item-action" id="list-operator-list" data-toggle="list"
+                        href="#list-operator" role="tab" aria-controls="new">Оператор</a>
+                    <a class="list-group-item list-group-item-action" id="list-security-list" data-toggle="list"
+                        href="#list-security" role="tab" aria-controls="checked">Служба безопасности</a>
+                    <a class="list-group-item list-group-item-action" id="list-grandpa-list" data-toggle="list"
+                        href="#list-grandpa" role="tab" aria-controls="messages">Деда</a>
+                    <a class="list-group-item list-group-item-action" id="list-owner-list" data-toggle="list"
+                        href="#list-owner" role="tab" aria-controls="settings">Владелец</a>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-new" role="tabpanel"
+                        aria-labelledby="list-new-list">
+                        Этот ранг выдаётся при первом заходе на сервер.
+                    </div>
+                    <div class="tab-pane fade" id="list-checked" role="tabpanel" aria-labelledby="list-checked-list">
+                        Игрок, наигравший 1 час. Это сделано, чтобы люди, только зашедшие на сервер, не старались
+                        крашить его.
+                    </div>
+                    <div class="tab-pane fade" id="list-mastered" role="tabpanel" aria-labelledby="list-mastered-list">
+                        Человек, наигравший уже 12 часов.</div>
+                    <div class="tab-pane fade" id="list-lover" role="tabpanel" aria-labelledby="list-lover-list">
+                        Человек, наигравший целый день.</div>
+                    <div class="tab-pane fade" id="list-expert" role="tabpanel" aria-labelledby="list-expert-list">
+                        Человек, наигравший целых 2 дня!</div>
+                    <div class="tab-pane fade" id="list-spec" role="tabpanel" aria-labelledby="list-spec-list">
+                        Человек, наигравший целых 4 дня!</div>
+                    <div class="tab-pane fade" id="list-veteran" role="tabpanel" aria-labelledby="list-veteran-list">
+                        Человек, наигравший целых 8 дней!!!</div>
+                    <div class="tab-pane fade" id="list-respected" role="tabpanel"
+                        aria-labelledby="list-respected-list">Выдаётся только самым уважаемым людям.</div>
+                    <div class="tab-pane fade" id="list-operator" role="tabpanel" aria-labelledby="list-operator-list">
+                        Ранг есть, но таких пока что людей нет</div>
+                    <div class="tab-pane fade" id="list-security" role="tabpanel" aria-labelledby="list-security-list">
+                        Выше оператора. В данный момент к ней нет смысла обращаться, она вам не поможет.</div>
+                    <div class="tab-pane fade" id="list-grandpa" role="tabpanel" aria-labelledby="list-grandpa-list">
+                        Друг создателя. Деда надо уважать. Помощник вне игры.</div>
+                    <div class="tab-pane fade" id="list-owner" role="tabpanel" aria-labelledby="list-owner-list">
+                        Владелец, батька, отец. Самый главный.</div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
