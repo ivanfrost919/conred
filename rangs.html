@@ -7,314 +7,220 @@
     <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" type=“text/css” href="main.css">
     <title>CONRED</title>
 </head>
 
 <body class="bg-gray">
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" width="50" height="50" alt="" loading="lazy">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" width="50" height="50" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-link" href="index.html">Главная</span></a>
-            <a class="nav-link" href="addons.html">Аддоны</a>
-            <a class="nav-link" href="info.html">Информация</a>
-            <a class="nav-link active" href="#">Ранги <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="faq.html">ЧаВо</a>
-            <a class="nav-link" href="about.html">О сервере</a>
-            <a class="nav-link" href="donate.html">Донат</a>
-        </div>
-    </div>
-</nav>
-<div class="container-fluid bg-light text-dark rounded-bottom p-5">
-    <h1 class="text-center">Ранги</h1>
-    <div class="row">
-        <div class="col-2">
-            <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-new-list" data-toggle="list"
-                   href="#list-new" role="tab" aria-controls="new">Новичок</a>
-                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-                   href="#list-checked" role="tab" aria-controls="checked">Проверенный</a>
-                <a class="list-group-item list-group-item-action" id="list-mastered-list" data-toggle="list"
-                   href="#list-mastered" role="tab" aria-controls="mastered">Освоившийся</a>
-                <a class="list-group-item list-group-item-action" id="list-lover-list" data-toggle="list"
-                   href="#list-lover" role="tab" aria-controls="lover">Любитель</a>
-                <a class="list-group-item list-group-item-action" id="list-expert-list" data-toggle="list"
-                   href="#list-expert" role="tab" aria-controls="expert">Знаток</a>
-                <a class="list-group-item list-group-item-action" id="list-spec-list" data-toggle="list"
-                   href="#list-spec" role="tab" aria-controls="spec">Специалист</a>
-                <a class="list-group-item list-group-item-action" id="list-veteran-list" data-toggle="list"
-                   href="#list-veteran" role="tab" aria-controls="veteran">Ветеран</a>
-                <a class="list-group-item list-group-item-action" id="list-respected-list" data-toggle="list"
-                   href="#list-respected" role="tab" aria-controls="respected">Уважаемый</a>
-                <a class="list-group-item list-group-item-action" id="list-moderator-list" data-toggle="list"
-                   href="#list-moderator" role="tab" aria-controls="moderator">Модератор</a>
-                <a class="list-group-item list-group-item-action" id="list-operator-list" data-toggle="list"
-                   href="#list-operator" role="tab" aria-controls="operator">Администратор</a>
-                <a class="list-group-item list-group-item-action" id="list-grandpa-list" data-toggle="list"
-                   href="#list-grandpa" role="tab" aria-controls="grandpa">Деда</a>
-                <a class="list-group-item list-group-item-action" id="list-owner-list" data-toggle="list"
-                   href="#list-owner" role="tab" aria-controls="owner">Владелец</a>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Главная</a>
+                <a class="nav-link" href="addons.html">Аддоны</a>
+                <a class="nav-link" href="info.html">Информация</a>
+                <a class="nav-link active" href="#">Ранги <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="faq.html">FAQ</a>
+                <a class="nav-link" href="about.html">О сервере</a>
+                <a class="nav-link" href="donate.html">Донат</a>
             </div>
         </div>
-        <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-new" role="tabpanel"
-                     aria-labelledby="list-new-list">
-                    Этот ранг выдаётся при первом заходе на сервер.
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>1</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>До следующего ранга - 1 час</h4>
+    </nav>
+    <div class="container-fluid bg-light text-dark rounded-bottom p-5">
+        <h1 class="text-center">Ранги</h1>
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-new-list" data-toggle="list"
+                        href="#list-new" role="tab" aria-controls="new">Пряник</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                        href="#list-checked" role="tab" aria-controls="checked">Неприметный</a>
+                    <a class="list-group-item list-group-item-action" id="list-mastered-list" data-toggle="list"
+                        href="#list-mastered" role="tab" aria-controls="mastered">Бывалый</a>
+                    <a class="list-group-item list-group-item-action" id="list-lover-list" data-toggle="list"
+                        href="#list-lover" role="tab" aria-controls="lover">Освоившийся</a>
+                    <a class="list-group-item list-group-item-action" id="list-expert-list" data-toggle="list"
+                        href="#list-expert" role="tab" aria-controls="expert">Свой</a>
+                    <a class="list-group-item list-group-item-action" id="list-spec-list" data-toggle="list"
+                        href="#list-spec" role="tab" aria-controls="spec">Опытный</a>
+                    <a class="list-group-item list-group-item-action" id="list-veteran-list" data-toggle="list"
+                        href="#list-veteran" role="tab" aria-controls="veteran">Продвинутый</a>
+                    <a class="list-group-item list-group-item-action" id="list-respected-list" data-toggle="list"
+                        href="#list-respected" role="tab" aria-controls="respected">Родной</a>
+                    <a class="list-group-item list-group-item-action" id="list-moderator-list" data-toggle="list"
+                        href="#list-moderator" role="tab" aria-controls="moderator">Ветеран</a>
                 </div>
-                <div class="tab-pane fade" id="list-checked" role="tabpanel" aria-labelledby="list-checked-list">
-                    Игрок, наигравший 1 час. Это сделано, чтобы люди, только зашедшие на сервер, не старались
-                    крашить его.
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>2</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>До следующего ранга - 12 часов</h4>
-                </div>
-                <div class="tab-pane fade" id="list-mastered" role="tabpanel" aria-labelledby="list-mastered-list">
-                    Человек, наигравший уже 12 часов.
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>2</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>До следующего ранга - 24 часа</h4>
-                </div>
-                <div class="tab-pane fade" id="list-lover" role="tabpanel" aria-labelledby="list-lover-list">
-                    Человек, наигравший целый день.
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>300</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <th>NPC</th>
-                            <td>3</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>До следующего ранга - 48 часов</h4>
-                </div>
-                <div class="tab-pane fade" id="list-expert" role="tabpanel" aria-labelledby="list-expert-list">
-                    Человек, наигравший целых 2 дня!
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>350</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <th>NPC</th>
-                            <td>3</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>До следующего ранга - 96 часов</h4>
-                </div>
-                <div class="tab-pane fade" id="list-spec" role="tabpanel" aria-labelledby="list-spec-list">
-                    Человек, наигравший целых 4 дня!
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>400</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <th>NPC</th>
-                            <td>3</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>До следующего ранга - 192 часа</h4>
-                </div>
-                <div class="tab-pane fade" id="list-veteran" role="tabpanel" aria-labelledby="list-veteran-list">
-                    Человек, наигравший целых 8 дней!!!
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>450</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <th>NPC</th>
-                            <td>3</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>Следующего ранга по времени нет</h4>
-                </div>
-                <div class="tab-pane fade" id="list-respected" role="tabpanel"
-                     aria-labelledby="list-respected-list">
-                    Выдаётся только самым уважаемым людям.
-                    <h4>Лимиты</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                        <tr>
-                            <th>Пропы</th>
-                            <td>600</td>
-                        </tr>
-                        <tr>
-                            <th>Энтити</th>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <th>Рэгдоллы</th>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th>Транспорт</th>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th>NPC</th>
-                            <td>6</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tab-pane fade" id="list-moderator" role="tabpanel"
-                     aria-labelledby="list-moderator-list">
-                    Блюстители закона.
-                </div>
-                <div class="tab-pane fade" id="list-operator" role="tabpanel" aria-labelledby="list-operator-list">
-                    Дополнительный администратор сервера.
-                </div>
-                <div class="tab-pane fade" id="list-grandpa" role="tabpanel" aria-labelledby="list-grandpa-list">
-                    Друг создателя. Деда надо уважать. Помощник вне игры.
-                </div>
-                <div class="tab-pane fade" id="list-owner" role="tabpanel" aria-labelledby="list-owner-list">
-                    Владелец, батька, отец. Самый главный.
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-new" role="tabpanel"
+                        aria-labelledby="list-new-list">
+                        Новичок, только зашедший на сервер.
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="list-checked" role="tabpanel" aria-labelledby="list-checked-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 1д. (24ч.)</h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-mastered" role="tabpanel" aria-labelledby="list-mastered-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>300</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 2д. (48ч.)</h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-lover" role="tabpanel" aria-labelledby="list-lover-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 4д. (96ч.)</h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-expert" role="tabpanel" aria-labelledby="list-expert-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 1н. 1д. (8д.) (192ч.)</h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-spec" role="tabpanel" aria-labelledby="list-spec-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>600</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 2н. 2д. (16д.) (384ч.)</h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-veteran" role="tabpanel" aria-labelledby="list-veteran-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 1м. 1д. (32д.) (768ч.)</h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-respected" role="tabpanel"
+                        aria-labelledby="list-respected-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 2м. 2д (64д.) (1,536ч.)</h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-moderator" role="tabpanel"
+                        aria-labelledby="list-respected-list">
+                        <h4>Лимиты</h4>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Пропы</th>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <th>Транспорт</th>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Время получения: 2м. 2д (64д.) (1,536ч.)</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 
 </html>
