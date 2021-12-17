@@ -9,6 +9,9 @@
 }
 
 h1 {
+    position: sticky;
+    z-index: 999;
+    top: 0;
     text-align: center;
     font-family: 'Fredoka One';
     font-size: 3em;
