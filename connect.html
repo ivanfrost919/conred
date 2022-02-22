@@ -8,7 +8,7 @@
     const params = new URLSearchParams(window.location.search);
 
     if(params.has("ip")) {
-        var meta = document.createElement("meta");
+        const meta = document.createElement("meta");
         meta.httpEquiv = "refresh";
         meta.content = "0;steam://connect/" + params.get("ip");
 
